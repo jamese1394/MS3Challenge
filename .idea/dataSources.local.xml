@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="dataSourceStorageLocal">
-    <data-source name="ms3" uuid="1ad0d98a-41e8-4975-8f54-e1d8291c37b3">
-      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+    <data-source name="ms3SQLite" uuid="69fbbd89-fb0d-476a-a744-663673cca4f5">
+      <database-info product="SQLite" version="3.25.1" jdbc-version="2.1" driver-name="SQLite JDBC" driver-version="3.25.1">
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed" />
+      <secret-storage>master_key</secret-storage>
+      <auth-required>false</auth-required>
+      <introspection-schemas>*:main</introspection-schemas>
     </data-source>
   </component>
 </project>

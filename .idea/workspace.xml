@@ -20,29 +20,43 @@
     <option name="SHOW_TABLE_DETAILS" value="true" />
     <option name="SHOW_EMPTY_GROUPS" value="false" />
     <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
-    <expand />
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="ms3SQLite" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="ms3SQLite" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="ms3SQLite" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="main: schema" type="90513b60:SqliteImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="ms3SQLite" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="main: schema" type="90513b60:SqliteImplModel$Schema" />
+        <item name="sqlite_master: table" type="ffe0bd85:SqliteImplModel$Table" />
+      </path>
+    </expand>
     <select />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="25" column="10" lean-forward="true" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="10" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CSVParser.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="CSVParser.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/CSVParser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+            <state relative-caret-position="915">
+              <caret line="61" column="19" lean-forward="false" selection-start-line="61" selection-start-column="19" selection-end-line="61" selection-end-column="19" />
               <folding>
-                <marker date="1577060130114" expanded="true" signature="2896:3055" ph="create table... person" />
-                <marker date="1577060130114" expanded="true" signature="3132:3244" ph="insert into student... " />
+                <element signature="imports" expanded="true" />
+                <marker date="1577074369916" expanded="true" signature="3115:3274" ph="create table... person" />
+                <marker date="1577074369916" expanded="true" signature="3351:3463" ph="insert into student... " />
               </folding>
             </state>
           </provider>
@@ -60,6 +74,8 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>student</find>
+      <find>fileName</find>
+      <find>badRecordLi</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -305,12 +321,12 @@
       <workItem from="1576800896940" duration="4532000" />
       <workItem from="1576985836257" duration="1525000" />
       <workItem from="1577050510215" duration="8822000" />
-      <workItem from="1577063852275" duration="175000" />
+      <workItem from="1577063852275" duration="5147000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15054000" />
+    <option name="totallyTimeSpent" value="20026000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="941" height="900" extended-state="0" />
@@ -331,7 +347,7 @@
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2731137" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297769" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32943678" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -349,6 +365,9 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.log" />
+  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
@@ -359,14 +378,6 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/CSVParser.java</url>
-          <line>119</line>
-          <properties />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
       <option name="time" value="2" />
     </breakpoint-manager>
     <watches-manager />
@@ -385,8 +396,9 @@
         <state relative-caret-position="120">
           <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding>
-            <marker date="1577060130114" expanded="true" signature="2896:3055" ph="create table... person" />
-            <marker date="1577060130114" expanded="true" signature="3132:3244" ph="insert into student... " />
+            <element signature="imports" expanded="true" />
+            <marker date="1577074369916" expanded="true" signature="3115:3274" ph="create table... person" />
+            <marker date="1577074369916" expanded="true" signature="3351:3463" ph="insert into student... " />
           </folding>
         </state>
       </provider>
@@ -404,8 +416,9 @@
         <state relative-caret-position="255">
           <caret line="17" column="60" lean-forward="true" selection-start-line="17" selection-start-column="60" selection-end-line="17" selection-end-column="60" />
           <folding>
-            <marker date="1577060130114" expanded="true" signature="2896:3055" ph="create table... person" />
-            <marker date="1577060130114" expanded="true" signature="3132:3244" ph="insert into student... " />
+            <element signature="imports" expanded="true" />
+            <marker date="1577074369916" expanded="true" signature="3115:3274" ph="create table... person" />
+            <marker date="1577074369916" expanded="true" signature="3351:3463" ph="insert into student... " />
           </folding>
         </state>
       </provider>
@@ -423,8 +436,9 @@
         <state relative-caret-position="255">
           <caret line="17" column="30" lean-forward="true" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
           <folding>
-            <marker date="1577060130114" expanded="true" signature="2896:3055" ph="create table... person" />
-            <marker date="1577060130114" expanded="true" signature="3132:3244" ph="insert into student... " />
+            <element signature="imports" expanded="true" />
+            <marker date="1577074369916" expanded="true" signature="3115:3274" ph="create table... person" />
+            <marker date="1577074369916" expanded="true" signature="3351:3463" ph="insert into student... " />
           </folding>
         </state>
       </provider>
@@ -545,22 +559,46 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/CSVParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding>
-            <marker date="1577060130114" expanded="true" signature="2896:3055" ph="create table... person" />
-            <marker date="1577060130114" expanded="true" signature="3132:3244" ph="insert into student... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
           <caret line="25" column="10" lean-forward="true" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="10" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/69fbbd89-fb0d-476a-a744-663673cca4f5/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/427e0ee9/69fbbd89-fb0d-476a-a744-663673cca4f5/main.person">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ms3Interview - Jr Challenge 2.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/CSVParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="915">
+          <caret line="61" column="19" lean-forward="false" selection-start-line="61" selection-start-column="19" selection-end-line="61" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1577074369916" expanded="true" signature="3115:3274" ph="create table... person" />
+            <marker date="1577074369916" expanded="true" signature="3351:3463" ph="insert into student... " />
+          </folding>
         </state>
       </provider>
     </entry>

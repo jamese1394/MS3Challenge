@@ -1,5 +1,4 @@
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.sql.Connection;
@@ -9,23 +8,25 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import com.opencsv.CSVReader;
+import com.opencsv.CSVWriter;
 
 public class CSVParser {
     private static List<String[]> goodRecordList;
+    private static String csvFile;
+    private static String fileName;
 
     public static void main(String args[]){
-        List<String[]> badRecordList;
         int numRecordsRcvd = 0;
         int numRecordsSuccessful = 0;
         int numRecordsFailed = 0;
-        String csvFile = "ms3Interview - Jr Challenge 2.csv";
+        csvFile = "ms3Interview - Jr Challenge 2.csv";
+        fileName = csvFile.replace(".csv", "");
         CSVReader reader = null;
+        CSVWriter writer = null;
 
         try{
             reader = new CSVReader(new FileReader(csvFile));
-            reader.readNext();
-
-            badRecordList = new ArrayList<String[]>();
+            writer = new CSVWriter(new PrintWriter(new FileOutputStream(fileName+ "-bad.csv")));
             goodRecordList = new ArrayList<String[]>();
 
             // Reads the first line of the CSV File to skip the headers
@@ -34,36 +35,37 @@ public class CSVParser {
             String[] nextRecord;
             outerloop:
             while ((nextRecord = reader.readNext()) != null) {
+
+                numRecordsRcvd++;
                 // Classifies a record as bad if it has more than 10 columns
                 if (nextRecord.length != 10) {
-                    badRecordList.add(nextRecord);
+                    writer.writeNext(nextRecord);
                     numRecordsFailed++;
-                    continue;
+                    continue outerloop;
                 }
 
                 else{
+                    // Classifies a record as bad if it has an empty cell
                     for (String cell : nextRecord) {
                         if (cell.isEmpty()) {
-                            badRecordList.add(nextRecord);
+                            writer.writeNext(nextRecord);
                             numRecordsFailed++;
                             continue outerloop;
                         }
                     }
 
-                    // Add record with 10 columns to database
-                    // writeRecordsToDB
+                    // Classifies a record as good if it does not meet above criteria
                     goodRecordList.add(nextRecord);
-                    numRecordsSuccessful++;
                 }
-                numRecordsRcvd++;
             }
 
+            // Add records with 10 columns to database
             for(String[] recordArr : goodRecordList){
                 writeGoodListToDB(recordArr);
+                numRecordsSuccessful++;
             }
 
-            // writeStatsToLog(numRecordsRcvd, numRecordsFailed, numRecordsSuccessful);
-            // writeBadListToFile(badRecordList);
+            writeStatsToLog(numRecordsRcvd, numRecordsSuccessful, numRecordsFailed);
         }
 
         catch (Exception e) {
@@ -73,6 +75,7 @@ public class CSVParser {
         finally {
             try {
                 reader.close();
+                writer.close();
             }
             catch(NullPointerException e){
                 e.printStackTrace();
@@ -84,12 +87,12 @@ public class CSVParser {
 
     }
 
-    public static void writeGoodListToDB(String[] record){
+    private static void writeGoodListToDB(String[] record){
         Connection connection = null;
 
         try{
             // SQLite
-            connection = DriverManager.getConnection("jdbc:sqlite:ms3.db");
+            connection = DriverManager.getConnection("jdbc:sqlite:" +fileName+ ".db");
             Statement statement = connection.createStatement();
 
             statement.executeUpdate("create table if not exists person (a string, b string, c string, d string, e string, " +
@@ -122,17 +125,27 @@ public class CSVParser {
                     connection.close();
                 }
             }
-            catch(SQLException e){
+            catch(SQLException e) {
                 // Connection failed to close
                 e.printStackTrace();
             }
         }
     }
 
-//    public static void writeStatsToLog(int numRecordsRcvd, int numRecordsFailed, int numRecordsSuccessful){
-//    }
-//
-//    public static void writeBadListToFile(List<String> badRecordList){
-//    }
+    private static void writeStatsToLog(int numRecordsRcvd, int numRecordsSuccessful, int numRecordsFailed){
+        PrintWriter pWriter = null;
+        try {
+            pWriter = new PrintWriter(new FileOutputStream(fileName + ".log"));
+            pWriter.println("Number of records received: "+ numRecordsRcvd);
+            pWriter.println("Number of records successful: "+ numRecordsSuccessful);
+            pWriter.println("Number of records failed: "+ numRecordsFailed);
+        }
+        catch(IOException e) {
+            e.printStackTrace();
+        }
+        finally {
+            pWriter.close();
+        }
+    }
 
 }
