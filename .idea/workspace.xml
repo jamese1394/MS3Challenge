@@ -41,11 +41,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Driver.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Driver.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Driver.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="27" column="54" lean-forward="false" selection-start-line="27" selection-start-column="54" selection-end-line="27" selection-end-column="54" />
+            <state relative-caret-position="450">
+              <caret line="30" column="29" lean-forward="false" selection-start-line="30" selection-start-column="25" selection-end-line="30" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -56,12 +56,12 @@
       <file leaf-file-name="RecordWriter.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/RecordWriter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="39" lean-forward="false" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
+            <state relative-caret-position="135">
+              <caret line="9" column="36" lean-forward="true" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
               <folding>
-                <marker date="1577214303960" expanded="true" signature="570:597" ph="DROP TABLE i... " />
-                <marker date="1577214303960" expanded="true" signature="633:797" ph="CREATE TABLE... if" />
-                <marker date="1577214303960" expanded="true" signature="1241:1353" ph="INSERT into person... " />
+                <marker date="1577215843681" expanded="true" signature="486:513" ph="DROP TABLE i... " />
+                <marker date="1577215843681" expanded="true" signature="549:713" ph="CREATE TABLE... if" />
+                <marker date="1577215843681" expanded="true" signature="1157:1269" ph="INSERT into person... " />
               </folding>
             </state>
           </provider>
@@ -71,13 +71,13 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/RecordValidator.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="150">
-              <caret line="10" column="20" lean-forward="true" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+              <caret line="10" column="20" lean-forward="false" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StatsLogger.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="StatsLogger.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/StatsLogger.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="240">
@@ -131,9 +131,9 @@
         <option value="$PROJECT_DIR$/src/main/java/CSVParser.java" />
         <option value="$PROJECT_DIR$/src/main/java/CSVDriver.java" />
         <option value="$PROJECT_DIR$/src/main/java/Driver.java" />
-        <option value="$PROJECT_DIR$/src/main/java/RecordWriter.java" />
         <option value="$PROJECT_DIR$/src/main/java/RecordValidator.java" />
         <option value="$PROJECT_DIR$/src/main/java/StatsLogger.java" />
+        <option value="$PROJECT_DIR$/src/main/java/RecordWriter.java" />
       </list>
     </option>
   </component>
@@ -367,12 +367,12 @@
       <workItem from="1577063852275" duration="6093000" />
       <workItem from="1577119347447" duration="2950000" />
       <workItem from="1577125579503" duration="5109000" />
-      <workItem from="1577205556618" duration="7682000" />
+      <workItem from="1577205556618" duration="8893000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36713000" />
+    <option name="totallyTimeSpent" value="37924000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1218" height="900" extended-state="0" />
@@ -662,6 +662,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/StatsLogger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="18" column="37" lean-forward="false" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="das://table:/427e0ee9/05104469-174b-4472-bef2-38f119f9cff2/main.person">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -677,41 +685,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Driver.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/RecordValidator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="27" column="54" lean-forward="false" selection-start-line="27" selection-start-column="54" selection-end-line="27" selection-end-column="54" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="150">
+          <caret line="10" column="20" lean-forward="false" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/RecordWriter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="39" lean-forward="false" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
+        <state relative-caret-position="135">
+          <caret line="9" column="36" lean-forward="true" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
           <folding>
-            <marker date="1577214303960" expanded="true" signature="570:597" ph="DROP TABLE i... " />
-            <marker date="1577214303960" expanded="true" signature="633:797" ph="CREATE TABLE... if" />
-            <marker date="1577214303960" expanded="true" signature="1241:1353" ph="INSERT into person... " />
+            <marker date="1577215843681" expanded="true" signature="486:513" ph="DROP TABLE i... " />
+            <marker date="1577215843681" expanded="true" signature="549:713" ph="CREATE TABLE... if" />
+            <marker date="1577215843681" expanded="true" signature="1157:1269" ph="INSERT into person... " />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/RecordValidator.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Driver.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="20" lean-forward="true" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/StatsLogger.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="18" column="37" lean-forward="false" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
-          <folding />
+        <state relative-caret-position="450">
+          <caret line="30" column="29" lean-forward="false" selection-start-line="30" selection-start-column="25" selection-end-line="30" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

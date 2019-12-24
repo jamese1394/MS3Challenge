@@ -28,7 +28,7 @@ public class Driver {
             // Reads the first line of the CSV File to skip the headers
             reader.readNext();
 
-            RecordWriter.checkTableExists(fileName);
+            RecordWriter.createTable(fileName);
 
             for (String[] record : reader) {
                 numRecordsReceived++;

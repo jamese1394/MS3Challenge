@@ -7,13 +7,11 @@ import java.sql.*;
 public class RecordWriter {
 
     /**
-     * Checks if the table exists
-     * Drops the table if it exists
-     * Creates the table if it does not exist
+     * Creates or replaces the table
      *
      * @throws SQLException
      */
-    public static void checkTableExists(String fileName) throws SQLException {
+    public static void createTable(String fileName) throws SQLException {
         try (Connection connection = DriverManager.getConnection("jdbc:sqlite:" + fileName + ".db")) {
             Statement statement = connection.createStatement();
 
