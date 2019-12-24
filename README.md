@@ -18,7 +18,7 @@ The *Driver* class uses the above classes to validate records, write the valid r
 OpenCSV's CSVReader class is used to read records iteratively from a CSV file. In each iteration, statistics are calculated, the record is classified as valid or bad, and then written to the database if valid, or written to a CSV file if bad.
 
 ## Design choices
-The application is split into microservices as opposed to a monolith. This approach was chosen for the purposes of efficiency and simplicity. The CSV records read into the application were not stored into an in-memory data structure, because storing a large data set in memory would harm efficiency. 
+The application is split into multiple classes as opposed to one monolithic class. This approach was chosen for the purposes of efficiency and simplicity. The CSV records read into the application were not stored into an in-memory data structure, because storing a large data set in memory would harm efficiency. 
 
 ## Assumptions
 It was assumed that the valid and bad records written to the database and bad CSV file, respectively, are correct. Proper testing can be done with JUnit in the future to verify the results.
