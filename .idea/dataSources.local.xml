@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="dataSourceStorageLocal">
-    <data-source name="ms3SQLite" uuid="69fbbd89-fb0d-476a-a744-663673cca4f5">
+    <data-source name="ms3Interview - Jr Challenge 2.db" uuid="05104469-174b-4472-bef2-38f119f9cff2">
       <database-info product="SQLite" version="3.25.1" jdbc-version="2.1" driver-name="SQLite JDBC" driver-version="3.25.1">
         <identifier-quote-string>&quot;</identifier-quote-string>
       </database-info>
